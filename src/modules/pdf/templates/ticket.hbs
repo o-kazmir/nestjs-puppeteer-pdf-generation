@@ -1,7 +1,7 @@
-<html lang='uk'>
+<html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <title>Квиток на потяг</title>
+    <title>Train Ticket</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -61,35 +61,35 @@
   <body>
     <div class='ticket'>
       <div class='header'>
-        <h1>Пасажирський квиток</h1>
-        <p>Залізничний транспорт України</p>
+        <h1>Passenger Ticket</h1>
+        <p>Railway Transport of Ukraine</p>
       </div>
 
       <div class='section'>
-        <div class='section-title'>Інформація про пасажира</div>
+        <div class='section-title'>Passenger Information</div>
         <div class='info'>
-          <span>Ім'я: <strong>{{passengerName}}</strong></span>
-          <span>Документ: <strong>{{documentId}}</strong></span>
+          <span>Name: <strong>{{passengerName}}</strong></span>
+          <span>Document: <strong>{{documentId}}</strong></span>
         </div>
       </div>
 
       <div class='section'>
-        <div class='section-title'>Інформація про рейс</div>
+        <div class='section-title'>Train Information</div>
         <div class='info'>
-          <span>Поїзд: <strong>{{trainNumber}} {{from}} - {{to}}</strong></span>
-          <span>Дата: <strong>{{departureDate}}</strong></span>
+          <span>Train: <strong>{{trainNumber}} {{from}} - {{to}}</strong></span>
+          <span>Date: <strong>{{departureDate}}</strong></span>
         </div>
         <div class='info'>
-          <span>Відправлення: <strong>{{departureTime}}</strong></span>
-          <span>Прибуття: <strong>{{arrivalTime}}</strong></span>
+          <span>Departure: <strong>{{departureTime}}</strong></span>
+          <span>Arrival: <strong>{{arrivalTime}}</strong></span>
         </div>
       </div>
 
       <div class='section'>
-        <div class='section-title'>Посадка</div>
+        <div class='section-title'>Boarding</div>
         <div class='info'>
-          <span>Вагон: <strong>{{carriage}}</strong></span>
-          <span>Місце: <strong>{{seat}}</strong></span>
+          <span>Carriage: <strong>{{carriage}}</strong></span>
+          <span>Seat: <strong>{{seat}}</strong></span>
         </div>
       </div>
 
@@ -98,14 +98,13 @@
           src='https://api.qrserver.com/v1/create-qr-code/?data=1234567890&size=120x120'
           alt='QR Code'
         />
-        <p>Код для перевірки квитка</p>
+        <p>Code for ticket verification</p>
       </div>
 
       <div class='footer'>
-        Будь ласка, прибудьте на вокзал щонайменше за 20 хвилин до відправлення
-        поїзда.
+        Please arrive at the station at least 20 minutes before train departure.
         <br />
-        Цей квиток дійсний лише при наявності документа, що посвідчує особу.
+        This ticket is only valid with an identification document.
       </div>
     </div>
   </body>

@@ -6,7 +6,8 @@ import { join } from 'node:path';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'public'),
+      rootPath: join(__dirname, 'public'),
+      serveRoot: '/static',
     }),
     TicketsApiModule,
   ],
