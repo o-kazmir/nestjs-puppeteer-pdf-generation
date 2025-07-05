@@ -4,7 +4,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const config = new DocumentBuilder().addTag('Tickets').build();
+  const config = new DocumentBuilder().build();
 
   const documentFactory = () => SwaggerModule.createDocument(app, config);
 
